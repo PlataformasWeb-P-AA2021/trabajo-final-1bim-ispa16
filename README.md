@@ -1,6 +1,6 @@
 # Trabajo Final Primer Bimestre
 
-## Uso de SqlAlchemy
+## Uso de SqlAlchemy en Windows
 <img src="https://miro.medium.com/max/590/1*gJO7yKfLFOK2zfHaFDMdgA.jpeg" alt="Girl in a jacket" >
 
 
