@@ -1,6 +1,8 @@
 # Trabajo Final Primer Bimestre
 
 ## Uso de SqlAlchemy
+<img src="https://miro.medium.com/max/590/1*gJO7yKfLFOK2zfHaFDMdgA.jpeg" alt="Girl in a jacket" width="500" height="600">
+
 
 Dada la información de la carpeta ***data***. Realizar las siguientes tareas:
 
