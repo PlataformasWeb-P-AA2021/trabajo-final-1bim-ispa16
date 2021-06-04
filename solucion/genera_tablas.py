@@ -59,8 +59,6 @@ class Establecimiento(Base):
     id = Column(String(100), primary_key=True)
     nombre = Column(String(100), nullable=False)
     # se agregan las claves foraneas
-    idProvincia = Column(Integer, ForeignKey('provincia.id'))
-    idCanton = Column(Integer, ForeignKey('canton.id'))
     idParroquia = Column(Integer, ForeignKey('parroquia.id'))
     distrito = Column(String(100), nullable=False)
     sostenimiento = Column(String(100), nullable=False)

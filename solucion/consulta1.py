@@ -17,13 +17,13 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 #parte1
-estabelcimiento = session.query(Establecimiento).filter(Establecimiento.idProvincia.like("7")).all()
+estabelcimiento = session.query(Establecimiento).join(Parroquia,Canton,Provincia).filter(Provincia.nombre.like("LOJA")).all()
 print("Todos los establecimientos de la provincia de Loja *****************************************")
 for x in estabelcimiento:
     print(x.nombre)
 
 #parte2
-estabelcimiento = session.query(Establecimiento).filter(Establecimiento.idCanton.like("1101")).all()
+estabelcimiento = session.query(Establecimiento).join(Parroquia,Canton).filter(Canton.nombre.like("LOJA")).all()
 print("Todos los establecimientos del canton Loja ********************************************************************************************************")
 for x in estabelcimiento:
     print(x.nombre)

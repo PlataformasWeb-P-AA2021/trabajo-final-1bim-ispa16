@@ -28,7 +28,7 @@ for x in parroquia:
 #parte2
 print("Los cantones que tiene establecimientos como número de estudiantes tales como: 448, 450, 451, 454, 458, 459")
 #numeros =[448, 450, 451, 454, 458, 459]
-cantones = session.query(Canton).join(Establecimiento).filter(or_(Establecimiento.estudiantes == '448', Establecimiento.estudiantes == '450',
+cantones = session.query(Canton).join(Parroquia,Establecimiento).filter(or_(Establecimiento.estudiantes == '448', Establecimiento.estudiantes == '450',
                                                                     Establecimiento.estudiantes == '451',Establecimiento.estudiantes == '454',
                                                                     Establecimiento.estudiantes == '458',Establecimiento.estudiantes == '459')).all()
 

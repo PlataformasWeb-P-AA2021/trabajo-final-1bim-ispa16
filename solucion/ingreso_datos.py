@@ -67,7 +67,7 @@ for x in result:
 for dato in datos:
     dato_array = dato.split('\n');
     dato_array= dato_array[0].split('|');
-    e = Establecimiento(id=dato_array[0],idProvincia=dato_array[2],idCanton=dato_array[4],idParroquia= dato_array[6], nombre=dato_array[1],distrito=dato_array[8],sostenimiento =dato_array[9] ,
+    e = Establecimiento(id=dato_array[0],idParroquia= dato_array[6], nombre=dato_array[1],distrito=dato_array[8],sostenimiento =dato_array[9] ,
                         tipo = dato_array[10],modalidad = dato_array[11],jornada = dato_array[12],acceso = dato_array[13],
                         estudiantes = dato_array[14], docentes = dato_array[15])
     session.add(e)

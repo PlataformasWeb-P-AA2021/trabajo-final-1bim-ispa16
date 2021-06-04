@@ -19,7 +19,7 @@ session = Session()
 #parte1
 
 print("Los cantones que tiene establecimientos con 0 número de profesores")    
-cantones = session.query(Canton).join(Establecimiento).filter(Establecimiento.docentes=='0').all()
+cantones = session.query(Canton).join(Parroquia,Establecimiento).filter(Establecimiento.docentes=='0').all()
 for x in cantones:
     print(x.nombre)
     
